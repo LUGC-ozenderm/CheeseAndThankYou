@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 html {
   font-size: 14px;
 }
@@ -18,5 +20,43 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+table.sortable th:hover{
+    cursor: pointer;
+}
+
+.navbar-light {
+    background-color:#fbc02d;
+}
+
+a {
+    color:#757575;
+}
+
+    a:hover {
+        color: #FBC02D;
+    }
+
+.btn-primary {
+    background-color: #ffeb3b;
+    color: #212121;
+}
+
+    .btn-primary:hover {
+        background-color: #FFF9C4;
+        color: #212121;
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .card {
+        height: 300px;
+        text-align: center;
+    }

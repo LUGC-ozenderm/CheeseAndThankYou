@@ -1,12 +1,27 @@
-﻿@{
-    ViewData["Title"] = "Shop";
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Shop our Cheeses";
 }
 
-<h1>First choose a style</h1>
+<h1>First choose your style</h1>
 
-<ul>
-    <li>english</li>
-    <li>soft</li>
-    <li>hard</li>
-    <li>blue</li>
+<ul class="row card-group">
+    @if (Model.Count() == 0)
+    {
+        <h1>No categories found</h1>
+        return;
+    }
+    @foreach (var c in Model)
+    {
+        <li class="col-lg-4 mb-3">
+            <div class="card">
+                <div class="card-body">
+                    <a asp-action="ByCategory" asp-route-id="@c.CategoryId">
+                        <h2>@c.Name</h2>
+                    </a>
+                </div>
+            </div>
+        </li>
+    }
 </ul>

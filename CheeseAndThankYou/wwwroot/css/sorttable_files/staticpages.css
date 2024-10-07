@@ -1,0 +1,33 @@
+@import 
+url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300|Roboto:400,100,100italic,400italic&display=swap);
+
+header, #content {
+    margin: auto;
+    max-width: 780px;
+}
+header h1 {
+    line-height: 1;
+}
+body {
+    background: black;
+    color: white;
+    font-family: Roboto, sans-serif;
+    padding: 10px 12.5%;
+    font-size: 1.2em;
+}
+a { color: #dd4814; text-decoration: none; }
+#content {
+    padding: 10px 30px;
+}
+
+@media (max-width: 800px) {
+  body {
+    max-width: 70ch;
+    padding: 2ch;
+    margin: auto;
+  }
+  #content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
